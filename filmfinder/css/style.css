@@ -7,6 +7,7 @@ body {
     font-family: "Lato", sans-serif;
     margin: 0;
     padding: 0;
+    color: #b7b7b7;
 }
 
 h1, h2, h3, h4, nav a {
@@ -73,3 +74,32 @@ h1, h2, h3, h4, nav a {
 .header-nav a:hover::after {
     transform: scaleX(1);
 }
+
+.cont-destaque {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.titulo-destaque {
+    display: flex;
+    margin: 1rem;
+}
+
+.logo-destaque-dia {
+    width: 2rem;
+    height: auto;
+}
+
+.poster-destaque {
+    width: 20rem;
+    height: auto;
+    border-radius: 10px;
+}
+
