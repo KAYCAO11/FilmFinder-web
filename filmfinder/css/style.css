@@ -80,15 +80,17 @@ h1, h2, h3, h4, nav a {
     justify-content: center;
 }
 
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .titulo-destaque {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-}
-
-.titulo-destaque {
-    display: flex;
     margin: 1rem;
 }
 
@@ -98,8 +100,99 @@ h1, h2, h3, h4, nav a {
 }
 
 .poster-destaque {
-    width: 20rem;
+    width: min(100%, 20rem);
     height: auto;
     border-radius: 10px;
 }
 
+.name-movie {
+    text-align: center;
+    margin: 0.75rem 0 0.25rem;
+}
+
+.movie-info {
+    text-align: center;
+}
+
+.movie-info p {
+    margin: 1.1rem;
+}
+
+.movie-info2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.movie-info2 p {
+    margin: 0.5rem;
+}
+
+.movie-info .btn-detalhes {
+    display: inline-block;
+    text-decoration: none;
+    color: #b7b7b7;
+    background-color: #BF3232;
+    border-radius: 0.5rem;
+    padding: 0.65rem;
+    transition: color 0.4s ease;
+}
+
+.movie-info .btn-detalhes:hover {
+    background-color: #121318;
+    color: #BF3232;
+    border: 1px solid #BF3232;
+   transform: scale(1);
+}
+
+.poster-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.poster-link img {
+    width: min(100%, 300px);
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.poster-link:hover img {
+    transform: scale(1.03);
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    margin-right: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.movies-cards {
+    flex: 0 0 55%;
+    scroll-snap-align: start;
+}
+
+.movies-cards img {
+    border-radius: 7px;
+}
+
+.top-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+}
+
+.top-cards img {
+    width: 2.5rem;
+    height: auto;
+    margin: 0;
+}
