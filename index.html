@@ -14,7 +14,6 @@
     <header class="header-top">
         <div class="filmfinder-img">
             <img class="image-filmfinder" src="./filmfinder/imagens/filmfinder-logo-certa.png" alt="Imagem logo FilmFinder">
-        
         </div>
         <nav class="header-nav">
             <a href="./filmfinder/pages/filmes.html">Filmes</a>
@@ -24,23 +23,23 @@
     </header>
 
     <section class="cont-destaque">
-        <div class="movie-card">
+        <div class="movie-card" data-movie-id="414906">
             <div class="titulo-destaque">
                 <img src="./filmfinder/imagens/clapperboard.svg" alt="logo-destaque" class="logo-destaque-dia">
                 <h2>Destaque do Dia</h2>
             </div>
-            <img class="poster-destaque" src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="Batman 2022"> 
-            <h2 class="name-movie">Batman</h2>
+            <img id="destaque-poster" class="poster-destaque" src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="Batman 2022">
+            <h2 id="destaque-titulo" class="name-movie">Batman</h2>
 
-        <div class="movie-info"> 
-            <div class="movie-info2">
-                <p class="nota-estrela">⭐ 7.8</p>
-                <p class="data-lan"> 📅 2022</p>
-                <p class="genero"> 🎭 Ação / Crime</p>
+            <div class="movie-info">
+                <div class="movie-info2">
+                    <p id="destaque-nota" class="nota-estrela">⭐ 7.8</p>
+                    <p id="destaque-data" class="data-lan">📅 2022</p>
+                    <p id="destaque-genero" class="genero">🎭 Ação / Crime</p>
+                </div>
+                <p id="destaque-descricao">Um vigilante investiga crimes sombrios enquanto Gotham mergulha no caos.</p>
+                <a id="destaque-link" class="btn-detalhes" href="./filmfinder/pages/detalhes.html?id=414906">Ver detalhes</a>
             </div>
-             <p>Um vigilante investiga crimes sombrios enquanto Gotham mergulha no caos.</p>
-            <a class="btn-detalhes" href="./filmfinder/pages/detalhes.html">Ver detalhes</a>
-        </div>   
         </div>
     </section>
 
@@ -50,37 +49,87 @@
             <h2>Em alta</h2>
         </div>
 
-        <div class="cards">
-            <div class="movies-cards">
-                <a class="poster-link" href="./filmfinder/pages/detalhes.html">
-                    <img src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Poster do filme">
+        <div id="lista-em-alta" class="cards">
+            <div class="movies-cards" data-movie-id="299534">
+                <a class="poster-link" href="./filmfinder/pages/detalhes.html?id=299534">
+                    <img class="movie-poster" src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Poster do filme">
                 </a>
-                <h2>vingadores Endgame</h2>
-            </div>
-            
-            <div class="movies-cards">
-                <a class="poster-link" href="./filmfinder/pages/detalhes.html">
-                    <img src="https://image.tmdb.org/t/p/w500/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg" alt="Poster do filme">
-                </a>
-                <h2>Shrek</h2>
+                <h2 class="movie-title">Vingadores Endgame</h2>
             </div>
 
-            <div class="movies-cards">
-                <a class="poster-link" href="./filmfinder/pages/detalhes.html">
-                    <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg" alt="Poster do filme">
+            <div class="movies-cards" data-movie-id="808">
+                <a class="poster-link" href="./filmfinder/pages/detalhes.html?id=808">
+                    <img class="movie-poster" src="https://image.tmdb.org/t/p/w500/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg" alt="Poster do filme">
                 </a>
-               <h2> Duna Parte 2</h2>
+                <h2 class="movie-title">Shrek</h2>
             </div>
 
-            <div class="movies-cards">
-                <a class="poster-link" href="./filmfinder/pages/detalhes.html">
-                    <img src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="Poster do filme">
+            <div class="movies-cards" data-movie-id="693134">
+                <a class="poster-link" href="./filmfinder/pages/detalhes.html?id=693134">
+                    <img class="movie-poster" src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg" alt="Poster do filme">
                 </a>
-                <h2>Batman</h2>
-            </div>    
+                <h2 class="movie-title">Duna Parte 2</h2>
+            </div>
+
+            <div class="movies-cards" data-movie-id="414906">
+                <a class="poster-link" href="./filmfinder/pages/detalhes.html?id=414906">
+                    <img class="movie-poster" src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="Poster do filme">
+                </a>
+                <h2 class="movie-title">Batman</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards-avaliados">
+        <div class="title-avaliados">
+            <img src="./filmfinder/imagens/star.svg" alt="Estrela do Top avaliados">
+            <h2>Top avaliados</h2>
         </div>
 
+        <div id="lista-top-avaliados" class="movies-avaliados">
+            <div class="movie-avaliado-card" data-movie-id="157336">
+                <a class="movie-avaliado" href="./filmfinder/pages/detalhes.html?id=157336">
+                    <img class="movie-poster" src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" width="300" alt="Capa do Interestelar">
+                </a>
+                <div class="textos-avaliados">
+                    <div class="linha-titulo-avaliado">
+                        <img src="./filmfinder/imagens/icons8-medal-100.png" alt="Medalha de primeiro lugar">
+                        <h2 class="movie-title">Interestelar</h2>
+                    </div>
+                    <p class="movie-rating">⭐ 9.0</p>
+                </div>
+            </div>
+
+            <div class="movie-avaliado-card" data-movie-id="550">
+                <a class="movie-avaliado" href="./filmfinder/pages/detalhes.html?id=550">
+                    <img class="movie-poster" src="https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg" width="300" alt="Capa do Clube da Luta">
+                </a>
+                <div class="textos-avaliados">
+                    <div class="linha-titulo-avaliado">
+                        <img src="./filmfinder/imagens/icons8-medalha-prata-100.png" alt="Medalha de segundo lugar">
+                        <h2 class="movie-title">La La Land</h2>
+                    </div>
+                    <p class="movie-rating">⭐ 8.8</p>
+                </div>
+            </div>
+
+            <div class="movie-avaliado-card" data-movie-id="597">
+                <a class="movie-avaliado" href="./filmfinder/pages/detalhes.html?id=597">
+                    <img class="movie-poster" src="https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg" width="300" alt="Capa do Titanic">
+                </a>
+                <div class="textos-avaliados">
+                    <div class="linha-titulo-avaliado">
+                        <img src="./filmfinder/imagens/icons8-medalha-bronze-100.png" alt="Medalha de terceiro lugar">
+                        <h2 class="movie-title">Titanic</h2>
+                    </div>
+
+                    <p class="movie-rating">⭐ 7.7</p>
+                    
+                </div>
+            </div>
+        </div>
     </section>
+
     <script src="./filmfinder/js/engine.js"></script>
 </body>
 </html>

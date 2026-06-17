@@ -196,3 +196,75 @@ h1, h2, h3, h4, nav a {
     height: auto;
     margin: 0;
 }
+
+.title-avaliados {
+    margin-top: 3.5rem;
+    margin-bottom: 2.3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.movie-avaliado-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-avaliados {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.textos-avaliados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+    margin: 1rem 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.linha-titulo-avaliado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.linha-titulo-avaliado img {
+    width: 2.5rem;
+    height: 100%;
+    margin-bottom: 0.8rem;
+}
+
+.textos-avaliados .movie-rating {
+    margin: 0;
+}
+
+.movie-rating {
+    font-size: 1.1rem;
+}
+
+.movie-poster {
+    border-radius: 10px;
+    width: 18rem;
+    height: auto;
+}
+
+.movie-avaliado {
+    display: inline-block;
+    border-radius: 7px;
+}
+
+.movie-avaliado img {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.movie-avaliado:hover img {
+    transform: scale(1.03);
+}
