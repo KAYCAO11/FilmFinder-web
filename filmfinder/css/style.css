@@ -198,7 +198,7 @@ h1, h2, h3, h4, nav a {
 }
 
 .title-avaliados {
-    margin-top: 3.5rem;
+    margin-top: 2.85rem;
     margin-bottom: 2.3rem;
     display: flex;
     justify-content: center;
@@ -238,7 +238,6 @@ h1, h2, h3, h4, nav a {
 .linha-titulo-avaliado img {
     width: 2.5rem;
     height: 100%;
-    margin-bottom: 0.8rem;
 }
 
 .textos-avaliados .movie-rating {
@@ -267,4 +266,61 @@ h1, h2, h3, h4, nav a {
 
 .movie-avaliado:hover img {
     transform: scale(1.03);
+}
+
+.lancamento-section {
+    background-color: #cdcccc;
+    color: #15161B;
+    margin: 1rem;
+    gap: 1rem;
+    border-radius: 7px;
+    display: grid;
+    justify-content: center;
+}
+
+
+.top-lancamento-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1.3rem;
+}
+
+.top-lancamento-section h2 {
+    font-size: 2.2rem;
+}
+
+.top-lancamento-section img {
+    width: 5rem;
+    height: auto;
+}
+
+.top-poster-lancamentos {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.top-poster-lancamentos img {
+    width: auto;
+    height: 2.5rem;
+}
+
+.poster-lancamento {
+    border-bottom: 1px solid #15161B;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.poster-lancamento:last-child {
+    border-bottom: none;
+}
+
+.poster-lancamento .poster-img {
+    width: 300px;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
