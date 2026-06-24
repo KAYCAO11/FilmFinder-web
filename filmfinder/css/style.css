@@ -324,3 +324,36 @@ h1, h2, h3, h4, nav a {
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
+
+footer {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin: 2rem 1rem 1rem;
+    gap: 0.8rem;
+    color: #cdcccc;
+}
+
+.footer-img {
+    width: 100%;
+    border-bottom: 0.5px solid #cdcccc;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-img img {
+    width: 15rem;
+    height: auto;
+}
+
+.text-footer {
+    display: grid;
+    gap: 0.7rem;
+    max-width: 22rem;
+}
+
+.text-footer h3 {
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
