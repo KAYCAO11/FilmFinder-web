@@ -421,3 +421,408 @@ footer {
     padding: 0;
     cursor: pointer;
 }
+
+.top-categorias {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.top-categorias h2 {
+    font-size: 2.2rem;
+}
+
+.top-categorias img {
+    width: 3.3rem;
+    height: 100%;
+    margin-top: 1.8rem;
+    gap: 1rem;
+}
+
+.top-card-action {
+    border-top: 0.5px solid #606060;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+.top-card-action img {
+    width: 3rem;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.top-card-action h2{
+    font-size: 2.2rem;
+}
+
+.cards-action {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.poster-action {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.poster-action img {
+    width: 235px;
+    border-radius: 0.6rem;
+    height: auto;
+}
+
+.top-card-comedia {
+    padding-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.top-card-comedia img {
+    width: 3.5rem;
+    height: 100%;
+    margin-top: 1.6rem;
+}
+
+.top-card-comedia h2 {
+    font-size: 2.2rem;
+}
+
+.cards-comedia-posters {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.poster-comedia {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.poster-comedia img {
+    width: 235px;
+    border-radius: 0.6rem;
+    height: auto;
+}
+
+.comedia-logo {
+    margin-right: -0.8rem;
+}
+
+.top-card-romance {
+    padding-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.top-card-romance img {
+    width: 3.5rem;
+    height: 100%;
+    margin-top: 1.6rem;
+}
+
+.top-card-romance h2 {
+    font-size: 2.2rem;
+}
+
+.cards-romance-posters {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.poster-romance {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.poster-romance img {
+    width: 235px;
+    border-radius: 0.6rem;
+    height: auto;
+}
+
+.top-card-terror {
+    padding-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.top-card-terror img {
+    width: 3.5rem;
+    height: 100%;
+    margin-top: 1.6rem;
+}
+
+.top-card-terror h2 {
+    font-size: 2.2rem;
+}
+
+.cards-terror-posters {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.poster-terror {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.poster-terror img {
+    width: 235px;
+    border-radius: 0.6rem;
+    height: auto;
+}
+
+.top-card-ficcao-cientifica {
+    padding-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.top-card-ficcao-cientifica img {
+    width: 3.5rem;
+    height: 100%;
+    margin-top: 1.6rem;
+}
+
+.top-card-ficcao-cientifica h2 {
+    font-size: 2.2rem;
+}
+
+.cards-ficcao-cientifica-posters {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.poster-ficcao-cientifica {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.poster-ficcao-cientifica img {
+    width: 235px;
+    border-radius: 0.6rem;
+    height: auto;
+}
+
+.top-card-drama {
+    padding-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.top-card-drama img {
+    width: 3.5rem;
+    height: 100%;
+    margin-top: 1.6rem;
+}
+
+.top-card-drama h2 {
+    font-size: 2.2rem;
+}
+
+.cards-drama-posters {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.poster-drama {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.poster-drama img {
+    width: 235px;
+    border-radius: 0.6rem;
+    height: auto;
+}
+
+.top-card-animacao {
+    padding-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.top-card-animacao img {
+    width: 3.5rem;
+    height: 100%;
+    margin-top: 1.6rem;
+}
+
+.top-card-animacao h2 {
+    font-size: 2.2rem;
+}
+
+.cards-animacao-posters {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.poster-animacao {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.poster-animacao img {
+    width: 235px;
+    border-radius: 0.6rem;
+    height: auto;
+}
+
+.top-card-suspense {
+    padding-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.top-card-suspense img {
+    width: 3.5rem;
+    height: 100%;
+    margin-top: 1.6rem;
+}
+
+.top-card-suspense h2 {
+    font-size: 2.2rem;
+}
+
+.cards-suspense-posters {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.poster-suspense {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.poster-suspense img {
+    width: 235px;
+    border-radius: 0.6rem;
+    height: auto;
+}
+
+.top-card-aventura {
+    padding-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.top-card-aventura img {
+    width: 3.5rem;
+    height: 100%;
+    margin-top: 1.6rem;
+}
+
+.top-card-aventura h2 {
+    font-size: 2.2rem;
+}
+
+.cards-aventura-posters {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.poster-aventura {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.poster-aventura img {
+    width: 235px;
+    border-radius: 0.6rem;
+    height: auto;
+}
+
+.top-card-fantasia {
+    padding-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.top-card-fantasia img {
+    width: 3.5rem;
+    height: 100%;
+    margin-top: 1.6rem;
+}
+
+.top-card-fantasia h2 {
+    font-size: 2.2rem;
+}
+
+.cards-fantasia-posters {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.poster-fantasia {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.poster-fantasia img {
+    width: 235px;
+    border-radius: 0.6rem;
+    height: auto;
+}
+

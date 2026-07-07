@@ -19,14 +19,474 @@
 
     <section class="top-section-form">
         <div class="form-class">
-            <form class="search-bar">
-                <button class="search-button" type="submit" aria-label="Buscar filme">
+            <form id="form-busca-filmes" class="search-bar">
+                <button id="botao-busca-filmes" class="search-button" type="submit" aria-label="Buscar filme">
                     <img src="/filmfinder/imagens/icons-pesquisar-lupa.svg" alt="">
                 </button>
-                <input autocomplete="off" class="search-input" type="text" placeholder="Buscar filme..." name="search">
+                <input id="input-busca-filmes" autocomplete="off" class="search-input" type="text" placeholder="Buscar filme..." name="search">
             </form>
         </div>
     </section>
+
+    <section id="resultado-busca-filmes" class="resultado-busca-filmes" aria-live="polite"></section>
+
+            <!--------- Cards Ação -------->
+
+    <section id="categorias-filmes" class="cards-categorias">
+        <div class="top-categorias">
+            <img src="/filmfinder/imagens/categorias-100.png" alt="logo categorias">
+            <h2>Categorias</h2>
+        </div>
+
+        <div id="categoria-acao" class="cards-posters" data-category="acao" data-genre-id="28">
+
+            <div id="titulo-categoria-acao" class="top-card-action">
+                <img src="/filmfinder/imagens/espadas-96 - Copia.png" alt="logo da categoria de ação">
+                <h2>Ação</h2>
+            </div>
+
+            <div id="lista-acao" class="cards-action">
+            
+                <div class="poster-action">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_the_furious_tokyo_drift_xlg.jpg" alt="poster do filme Velozes e Furiosos 3, Desafio em Tokyo">
+                    </a>
+                </div>   
+
+                <div class="poster-action">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_furious_4.jpg" alt="poster do filme Velozes e Furiosos 4">
+                    </a>
+                </div>   
+
+                <div class="poster-action">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/superman_ver2_xlg.jpg" alt="poster do filme Superman">
+                    </a>
+                </div>   
+
+                <div class="poster-action">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/robocop_ver2_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+                <div class="poster-action">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/creed_ii_ver3_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+               <!--------- Cards Comédia -------->
+
+    <section id="categoria-comedia" class="cards-comedia" data-category="comedia" data-genre-id="35">
+        <div class="cards-posters">
+            <div id="titulo-categoria-comedia" class="top-card-comedia">
+                <img class="comedia-logo" src="/filmfinder/imagens/Comedia-logo.png" alt="logo da categoria de comédia">
+                <h2>Comédia</h2>
+            </div>
+
+            <div id="lista-comedia" class="cards-comedia-posters">
+            
+                <div class="poster-comedia">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_the_furious_tokyo_drift_xlg.jpg" alt="poster do filme Velozes e Furiosos 3, Desafio em Tokyo">
+                    </a>
+                </div>   
+
+                <div class="poster-comedia">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_furious_4.jpg" alt="poster do filme Velozes e Furiosos 4">
+                    </a>
+                </div>   
+
+                <div class="poster-comedia">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/superman_ver2_xlg.jpg" alt="poster do filme Superman">
+                    </a>
+                </div>   
+
+                <div class="poster-comedia">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/robocop_ver2_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+                <div class="poster-comedia">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/creed_ii_ver3_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+               <!--------- Cards Romance -------->
+
+    <section id="categoria-romance" class="cards-romance" data-category="romance" data-genre-id="10749">
+        <div class="cards-posters">
+            <div id="titulo-categoria-romance" class="top-card-romance">
+                <img src="/filmfinder/imagens/coração-100 - Copia.png" alt="logo da categoria de romance">
+                <h2>Romance</h2>
+            </div>
+
+            <div id="lista-romance" class="cards-romance-posters">
+            
+                <div class="poster-romance">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_the_furious_tokyo_drift_xlg.jpg" alt="poster do filme Velozes e Furiosos 3, Desafio em Tokyo">
+                    </a>
+                </div>   
+
+                <div class="poster-romance">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_furious_4.jpg" alt="poster do filme Velozes e Furiosos 4">
+                    </a>
+                </div>   
+
+                <div class="poster-romance">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/superman_ver2_xlg.jpg" alt="poster do filme Superman">
+                    </a>
+                </div>   
+
+                <div class="poster-romance">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/robocop_ver2_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+                <div class="poster-romance">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/creed_ii_ver3_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+               <!--------- Cards Terror -------->
+
+    <section id="categoria-terror" class="cards-terror" data-category="terror" data-genre-id="27">
+        <div class="cards-posters">
+            <div id="titulo-categoria-terror" class="top-card-terror">
+                <img src="/filmfinder/imagens/fantasma-100 - Copia.png" alt="logo da categoria de terror">
+                <h2>Terror</h2>
+            </div>
+
+            <div id="lista-terror" class="cards-terror-posters">
+            
+                <div class="poster-terror">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_the_furious_tokyo_drift_xlg.jpg" alt="poster do filme Velozes e Furiosos 3, Desafio em Tokyo">
+                    </a>
+                </div>   
+
+                <div class="poster-terror">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_furious_4.jpg" alt="poster do filme Velozes e Furiosos 4">
+                    </a>
+                </div>   
+
+                <div class="poster-terror">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/superman_ver2_xlg.jpg" alt="poster do filme Superman">
+                    </a>
+                </div>   
+
+                <div class="poster-terror">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/robocop_ver2_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+                <div class="poster-terror">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/creed_ii_ver3_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+               <!--------- Cards Ficção Científica -------->
+
+    <section id="categoria-ficcao-cientifica" class="cards-ficcao-cientifica" data-category="ficcao-cientifica" data-genre-id="878">
+        <div class="cards-posters">
+            <div id="titulo-categoria-ficcao-cientifica" class="top-card-ficcao-cientifica">
+                <img src="/filmfinder/imagens/atomo.png" alt="logo da categoria de ficção científica">
+                <h2>Ficção Científica</h2>
+            </div>
+
+            <div id="lista-ficcao-cientifica" class="cards-ficcao-cientifica-posters">
+            
+                <div class="poster-ficcao-cientifica">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_the_furious_tokyo_drift_xlg.jpg" alt="poster do filme Velozes e Furiosos 3, Desafio em Tokyo">
+                    </a>
+                </div>   
+
+                <div class="poster-ficcao-cientifica">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_furious_4.jpg" alt="poster do filme Velozes e Furiosos 4">
+                    </a>
+                </div>   
+
+                <div class="poster-ficcao-cientifica">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/superman_ver2_xlg.jpg" alt="poster do filme Superman">
+                    </a>
+                </div>   
+
+                <div class="poster-ficcao-cientifica">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/robocop_ver2_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+                <div class="poster-ficcao-cientifica">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/creed_ii_ver3_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+               <!--------- Cards Drama -------->
+
+    <section id="categoria-drama" class="cards-drama" data-category="drama" data-genre-id="18">
+        <div class="cards-posters">
+            <div id="titulo-categoria-drama" class="top-card-drama">
+                <img src="/filmfinder/imagens/Drama.png" alt="logo da categoria de drama">
+                <h2>Drama</h2>
+            </div>
+
+            <div id="lista-drama" class="cards-drama-posters">
+            
+                <div class="poster-drama">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_the_furious_tokyo_drift_xlg.jpg" alt="poster do filme Velozes e Furiosos 3, Desafio em Tokyo">
+                    </a>
+                </div>   
+
+                <div class="poster-drama">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_furious_4.jpg" alt="poster do filme Velozes e Furiosos 4">
+                    </a>
+                </div>   
+
+                <div class="poster-drama">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/superman_ver2_xlg.jpg" alt="poster do filme Superman">
+                    </a>
+                </div>   
+
+                <div class="poster-drama">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/robocop_ver2_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+                <div class="poster-drama">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/creed_ii_ver3_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+               <!--------- Cards Animação -------->
+
+    <section id="categoria-animacao" class="cards-animacao" data-category="animacao" data-genre-id="16">
+        <div class="cards-posters">
+            <div id="titulo-categoria-animacao" class="top-card-animacao">
+                <img src="/filmfinder/imagens/icons8-paleta-de-pintura-100.png" alt="logo da categoria de animação">
+                <h2>Animação</h2>
+            </div>
+
+            <div id="lista-animacao" class="cards-animacao-posters">
+            
+                <div class="poster-animacao">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_the_furious_tokyo_drift_xlg.jpg" alt="poster do filme Velozes e Furiosos 3, Desafio em Tokyo">
+                    </a>
+                </div>   
+
+                <div class="poster-animacao">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_furious_4.jpg" alt="poster do filme Velozes e Furiosos 4">
+                    </a>
+                </div>   
+
+                <div class="poster-animacao">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/superman_ver2_xlg.jpg" alt="poster do filme Superman">
+                    </a>
+                </div>   
+
+                <div class="poster-animacao">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/robocop_ver2_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+                <div class="poster-animacao">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/creed_ii_ver3_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+               <!--------- Cards Suspense -------->
+
+    <section id="categoria-suspense" class="cards-suspense" data-category="suspense" data-genre-id="53">
+        <div class="cards-posters">
+            <div id="titulo-categoria-suspense" class="top-card-suspense">
+                <img src="/filmfinder/imagens/icons8-misterioso-96.png" alt="logo da categoria de suspense">
+                <h2>Suspense</h2>
+            </div>
+
+            <div id="lista-suspense" class="cards-suspense-posters">
+            
+                <div class="poster-suspense">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_the_furious_tokyo_drift_xlg.jpg" alt="poster do filme Velozes e Furiosos 3, Desafio em Tokyo">
+                    </a>
+                </div>   
+
+                <div class="poster-suspense">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_furious_4.jpg" alt="poster do filme Velozes e Furiosos 4">
+                    </a>
+                </div>   
+
+                <div class="poster-suspense">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/superman_ver2_xlg.jpg" alt="poster do filme Superman">
+                    </a>
+                </div>   
+
+                <div class="poster-suspense">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/robocop_ver2_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+                <div class="poster-suspense">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/creed_ii_ver3_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+               <!--------- Cards Aventura -------->
+
+    <section id="categoria-aventura" class="cards-aventura" data-category="aventura" data-genre-id="12">
+        <div class="cards-posters">
+            <div id="titulo-categoria-aventura" class="top-card-aventura">
+                <img src="/filmfinder/imagens/bússola-100.png" alt="logo da categoria de aventura">
+                <h2>Aventura</h2>
+            </div>
+
+            <div id="lista-aventura" class="cards-aventura-posters">
+            
+                <div class="poster-aventura">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_the_furious_tokyo_drift_xlg.jpg" alt="poster do filme Velozes e Furiosos 3, Desafio em Tokyo">
+                    </a>
+                </div>   
+
+                <div class="poster-aventura">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_furious_4.jpg" alt="poster do filme Velozes e Furiosos 4">
+                    </a>
+                </div>   
+
+                <div class="poster-aventura">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/superman_ver2_xlg.jpg" alt="poster do filme Superman">
+                    </a>
+                </div>   
+
+                <div class="poster-aventura">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/robocop_ver2_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+                <div class="poster-aventura">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/creed_ii_ver3_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+               <!--------- Cards Fantasia -------->
+
+    <section id="categoria-fantasia" class="cards-fantasia" data-category="fantasia" data-genre-id="14">
+        <div class="cards-posters">
+            <div id="titulo-categoria-fantasia" class="top-card-fantasia">
+                <img src="/filmfinder/imagens/varinha-96.png" alt="logo da categoria de fantasia">
+                <h2>Fantasia</h2>
+            </div>
+
+            <div id="lista-fantasia" class="cards-fantasia-posters">
+            
+                <div class="poster-fantasia">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_the_furious_tokyo_drift_xlg.jpg" alt="poster do filme Velozes e Furiosos 3, Desafio em Tokyo">
+                    </a>
+                </div>   
+
+                <div class="poster-fantasia">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/fast_and_furious_4.jpg" alt="poster do filme Velozes e Furiosos 4">
+                    </a>
+                </div>   
+
+                <div class="poster-fantasia">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/superman_ver2_xlg.jpg" alt="poster do filme Superman">
+                    </a>
+                </div>   
+
+                <div class="poster-fantasia">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/robocop_ver2_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+                <div class="poster-fantasia">
+                    <a href="detalhes.html">
+                    <img src="/filmfinder/posters/creed_ii_ver3_xlg.jpg" alt="poster do filme Moonfall">
+                    </a>
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+   
     <script src="../js/engine.js"></script>
 </body>
 </html>

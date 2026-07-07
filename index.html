@@ -22,7 +22,7 @@
         </nav>
     </header>
 
-    <section class="cont-destaque">
+    <section id="secao-destaque" class="cont-destaque">
         <div class="movie-card" data-movie-id="414906">
             <div class="titulo-destaque">
                 <img src="./filmfinder/imagens/clapperboard.svg" alt="logo-destaque" class="logo-destaque-dia">
@@ -43,13 +43,13 @@
         </div>
     </section>
 
-    <section class="cards-alta">
+    <section id="secao-em-alta" class="cards-alta">
         <div class="top-cards">
             <img src="./filmfinder/imagens/FogoBrancoDoEmAlta.png" alt="Fogo do Em alta">
             <h2>Em alta</h2>
         </div>
 
-        <div id="lista-em-alta" class="cards">
+        <div id="lista-em-alta" class="cards" data-list="em-alta">
             <div class="movies-cards" data-movie-id="299534">
                 <a class="poster-link" href="./filmfinder/pages/detalhes.html?id=299534">
                     <img class="movie-poster" src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Poster do filme">
@@ -80,13 +80,13 @@
         </div>
     </section>
 
-    <section class="cards-avaliados">
+    <section id="secao-top-avaliados" class="cards-avaliados">
         <div class="title-avaliados">
             <img src="./filmfinder/imagens/star.svg" alt="Estrela do Top avaliados">
             <h2>Top avaliados</h2>
         </div>
 
-        <div id="lista-top-avaliados" class="movies-avaliados">
+        <div id="lista-top-avaliados" class="movies-avaliados" data-list="top-avaliados">
             <div class="movie-avaliado-card" data-movie-id="157336">
                 <a class="movie-avaliado" href="./filmfinder/pages/detalhes.html?id=157336">
                     <img class="movie-poster" src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" width="300" alt="Capa do Interestelar">
@@ -130,13 +130,13 @@
         </div>
     </section>
 
-    <section class="lancamento-section">
+    <section id="secao-lancamentos" class="lancamento-section">
         <div class="top-lancamento-section">
             <img src="./filmfinder/imagens/new.png" width="50" alt="Imagem de novos lançamentos">
             <h2>Lançamentos</h2>
         </div>
 
-        <div class="lancamento-card">
+        <div id="lista-lancamentos" class="lancamento-card" data-list="lancamentos">
             <div class="poster-lancamento">
                 <div class="top-poster-lancamentos">
                     <img src="./filmfinder/imagens/icons8-calendar-100.png" alt="Calendario">
@@ -201,12 +201,3 @@
     <script src="./filmfinder/js/engine.js"></script>
 </body>
 </html>
-
-<!--
-            http://www.impawards.com/2026/posters/michael_ver3_xlg.jpg - Michael Filme
-            http://www.impawards.com/2026/posters/masters_of_the_universe_ver5_xlg.jpg - Masters of the Universe / He Man
-            http://www.impawards.com/2026/posters/disclosure_day_xlg.jpg - Dia D
-            http://www.impawards.com/2026/posters/toy_story_five_ver4_xlg.jpg - Toy Story 5
-            
-            Onde eu peguei as capas dos Filmes
--->
