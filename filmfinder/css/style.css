@@ -826,3 +826,32 @@ footer {
     height: auto;
 }
 
+footer {
+    border-top: 0.5px solid #606060;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+}
+
+footer p {
+    margin-bottom: 3rem;
+}
+
+.top-footer-filmes img{
+    width: 15rem;
+    height: auto;
+}
+
+.mid-footer-filmes {
+    display: flex;
+    gap: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+    margin-top: 0;
+}
+
+.mid-footer-filmes a {
+    text-decoration: none;
+    color: #b7b7b7;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
