@@ -836,12 +836,14 @@ footer p {
     margin-bottom: 3rem;
 }
 
-.top-footer-filmes img{
+.top-footer-filmes img,
+.top-footer-pages img {
     width: 15rem;
     height: auto;
 }
 
-.mid-footer-filmes {
+.mid-footer-filmes,
+.mid-footer-pages {
     display: flex;
     gap: 3rem;
     margin: 1rem;
@@ -849,7 +851,8 @@ footer p {
     margin-top: 0;
 }
 
-.mid-footer-filmes a {
+.mid-footer-filmes a,
+.mid-footer-pages a {
     text-decoration: none;
     color: #b7b7b7;
     font-weight: 600;
@@ -906,6 +909,7 @@ footer p {
     border-radius: 0.8rem;
     width: 300px;
     height: auto;
+    border: px solid #2F2F2C;
 }
 
 .poster-popular img{
@@ -914,5 +918,366 @@ footer p {
 
 .poster-popular:hover img{
     transform: scale(1.03);
+}
+
+.populares-cards {
+    position: relative;
+    overflow: hidden;
+    padding: 3rem;
+    border-radius: 0.3rem;
+    isolation: isolate;
+    margin-bottom: 0.5rem;
+}
+
+.populares-cards::before {
+    content: "";
+    position: absolute;
+    inset: -30px;
+    z-index: -1;
+    background-image: url(../posters/disclosure_day_xlg.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    opacity: 0.8;
+}
+
+.populares-posters h2,
+.populares-posters h3 {
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0.3rem 0.7rem;
+    margin-top: 1.5rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.692);
+    border-radius: 0.2rem;
+}
+
+.populares-posters .poster-popular img {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24);
+}
+
+.top-explorando {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.top-explorando img {
+    width: 4rem;
+    height: 3.3rem;
+    margin-top: 1rem;
+}
+
+.cards-explorando {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cards-explorando img {
+    width: 190px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.nota-filme {
+    text-align: center;
+    margin-top: 0.2px;
+}
+
+.text-explorando-cards {
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.section-explorando .text-explorando-cards .name-movie {
+    max-width: 190px;
+    margin-inline: auto;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+/* 
+------------------------
+    Responsividade mobile
+------------------------
+*/
+
+img {
+    max-width: 100%;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.detalhes-filme,
+.detalhes-card,
+.detalhes-info,
+.detalhes-trailer-section,
+.detalhes-trailer {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.detalhes-poster {
+    width: min(100%, 300px);
+    height: auto;
+}
+
+.detalhes-trailer iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .header-top {
+        padding-inline: 0.75rem;
+    }
+
+    .header-nav {
+        justify-content: space-evenly;
+        gap: 0.75rem 1.5rem;
+        font-size: clamp(1rem, 5vw, 1.3rem);
+    }
+
+    .cont-destaque,
+    .movie-card,
+    .cards-avaliados,
+    .lancamento-section,
+    .poulares,
+    .section-explorando {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .movie-card {
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .titulo-destaque,
+    .top-cards,
+    .title-avaliados,
+    .top-lancamento-section,
+    .top-categorias,
+    .top-card-action,
+    .top-card-comedia,
+    .top-card-romance,
+    .top-card-terror,
+    .top-card-ficcao-cientifica,
+    .top-card-drama,
+    .top-card-animacao,
+    .top-card-suspense,
+    .top-card-aventura,
+    .top-card-fantasia,
+    .text-top-populares,
+    .top-explorando {
+        min-width: 0;
+        padding-inline: 0.75rem;
+    }
+
+    .titulo-destaque h2,
+    .top-cards h2,
+    .title-avaliados h2,
+    .top-lancamento-section h2,
+    .top-categorias h2,
+    .top-card-action h2,
+    .top-card-comedia h2,
+    .top-card-romance h2,
+    .top-card-terror h2,
+    .top-card-ficcao-cientifica h2,
+    .top-card-drama h2,
+    .top-card-animacao h2,
+    .top-card-suspense h2,
+    .top-card-aventura h2,
+    .top-card-fantasia h2,
+    .text-top-populares h1,
+    .top-explorando h2 {
+        min-width: 0;
+        overflow-wrap: break-word;
+        font-size: clamp(1.45rem, 7vw, 2.2rem);
+    }
+
+    .poster-destaque,
+    .movie-poster,
+    .poster-lancamento .poster-img {
+        width: min(100%, 300px);
+    }
+
+    .cards {
+        max-width: 100%;
+        margin-inline: 0;
+        padding-inline: 0.75rem;
+    }
+
+    .movies-cards {
+        flex-basis: min(78vw, 280px);
+    }
+
+    .lancamento-section {
+        margin-inline: 0.75rem;
+        padding-inline: 0.75rem;
+    }
+
+    .poster-lancamento,
+    .top-poster-lancamentos {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .search-bar {
+        min-width: 0;
+    }
+
+    .cards-action,
+    .cards-comedia-posters,
+    .cards-romance-posters,
+    .cards-terror-posters,
+    .cards-ficcao-cientifica-posters,
+    .cards-drama-posters,
+    .cards-animacao-posters,
+    .cards-suspense-posters,
+    .cards-aventura-posters,
+    .cards-fantasia-posters {
+        max-width: 100%;
+        padding-inline: 0.75rem;
+    }
+
+    .poster-action img,
+    .poster-comedia img,
+    .poster-romance img,
+    .poster-terror img,
+    .poster-ficcao-cientifica img,
+    .poster-drama img,
+    .poster-animacao img,
+    .poster-suspense img,
+    .poster-aventura img,
+    .poster-fantasia img {
+        width: min(72vw, 235px);
+    }
+
+    .populares-cards {
+        width: 100%;
+        padding: clamp(0.75rem, 5vw, 1.5rem);
+    }
+
+    .populares-posters,
+    .poster-popular {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .populares-posters img {
+        width: min(100%, 300px);
+    }
+
+    .populares-posters h2,
+    .populares-posters h3 {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .section-explorando {
+        padding-inline: 0.75rem;
+    }
+
+    .cards-explorando {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+        gap: 1rem 0.75rem;
+        width: 100%;
+    }
+
+    .posters-explorando,
+    .post-explorando,
+    .text-explorando-cards {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .cards-explorando img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .section-explorando .text-explorando-cards .name-movie {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(1rem, 5vw, 1.5rem);
+    }
+
+    .mid-footer-filmes,
+    .mid-footer-pages {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem 2rem;
+        max-width: 100%;
+        margin-inline: 0;
+        padding-inline: 0.5rem;
+    }
+
+    .detalhes-filme {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .detalhes-card {
+        display: grid;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .detalhes-info,
+    .detalhes-titulo,
+    .detalhes-descricao {
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+}
+
+@media (max-width: 360px) {
+    .header-nav {
+        gap: 0.65rem 1rem;
+    }
+
+    .movie-info2 {
+        gap: 0.35rem;
+    }
+
+    .movie-info2 p {
+        margin-inline: 0.2rem;
+    }
+
+    .cards-explorando {
+        gap: 0.75rem 0.5rem;
+    }
+
+    .populares-posters h2,
+    .populares-posters h3 {
+        padding-inline: 0.45rem;
+        font-size: clamp(0.95rem, 5.5vw, 1.2rem);
+    }
+
+    .mid-footer-filmes,
+    .mid-footer-pages {
+        gap: 0.75rem 1.25rem;
+    }
 }
 
